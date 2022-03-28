@@ -1,11 +1,10 @@
 const express = require("express")
 const router = express.Router()
 
-router.get("/users", (req, res) => {
-    
-    const data = ["data 1", "data 2"]
-    
-    res.send({data})
-})
+const { getItems, getItem } = require("../controllers/usersController")
+
+router.get("/", getItems);
+
+router.get("/:id", getItem);
 
 module.exports = router
