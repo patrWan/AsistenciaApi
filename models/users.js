@@ -12,7 +12,7 @@ const UserScheme = new mongoose.Schema(
         lastName:{
             type:String
         },
-        adress:{
+        address:{
             type:String
         },
         phone:{
